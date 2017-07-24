@@ -98,10 +98,19 @@ describe("About Applying What We Have Learnt", function() {
 
     /* chain() together map(), flatten() and reduce() */
     var result = _(products).chain()
+      .map(function(pizza) {return pizza.ingredients})
+      .flatten()
+      .reduce(function(memo, x) {
+        
+          return ingredientCount.x = (ingredientCount.x || 0) + 1; 
+        
+      });
+      
+
       
 
 
-    expect(ingredientCount['mushrooms']).toBe(FILL_ME_IN);
+    expect(ingredientCount['mushrooms']).toBe(result.mushrooms);
   });
 
   /*********************************************************************************/
